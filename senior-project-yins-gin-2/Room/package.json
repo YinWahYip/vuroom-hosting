@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "vercel --prod"
+
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.9.0",
@@ -23,6 +25,7 @@
     "aws-amplify": "^6.10.2",
     "gsap": "3.12",
     "lil-gui": "^0.19.2",
-    "three": "^0.166.1"
+    "three": "^0.166.1",
+    "vercel": "^39.2.1"
   }
 }
