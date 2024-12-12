@@ -8,10 +8,19 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.9.0",
+    "@aws-amplify/backend-cli": "^1.4.3",
+    "aws-cdk": "^2.173.0",
+    "aws-cdk-lib": "^2.173.0",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
     "vite": "^5.3.3",
     "vite-plugin-restart": "^0.4.1"
   },
   "dependencies": {
+    "aws-amplify": "^6.10.2",
     "gsap": "3.12",
     "lil-gui": "^0.19.2",
     "three": "^0.166.1"
