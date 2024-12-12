@@ -1,0 +1,4 @@
+Welcome to VUROOM - A website designed for incoming
+Youngers to see just what kind of rooms this university
+has in store for them. If you're an alumni and lived in
+south, you know exactly how it was...

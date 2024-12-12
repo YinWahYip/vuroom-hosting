@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #1e1a20;
+}
+
+/* WebGL Canvas */
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.separate-lines span {
+  display: block;
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #ffeded;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Section styling */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  font-family: sans-serif;
+  color: #ffeded;
+  text-transform: uppercase;
+  font-size: 13vmin;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+section:nth-child(odd) {
+  justify-content: flex-end;
+}
+
+/*SECTION 1 */
+.animated-text {
+  font-size: 15vmin;
+  white-space: nowrap;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(100%);
+  animation: zoom-past 1s ease-out forwards;
+}
+
+.animated-text {
+  display: flex;
+  justify-content: center;
+  font-size: 20vmin;
+  white-space: nowrap;
+}
+
+.letter {
+  font-weight: bold;
+}
+
+/* Alternate colors for each letter */
+.v {
+  color: #2596be;
+  /* Villanova Blue */
+}
+
+.u {
+  color: #ffffff;
+  /* White */
+}
+
+.r {
+  color: #2596be;
+  /* Villanova Blue */
+}
+
+.o {
+  color: #ffffff;
+  /* White */
+}
+
+.o2 {
+  color: #2596be;
+  /* Villanova Blue */
+}
+
+.m {
+  color: #ffffff;
+  /* White */
+}
+
+
+@keyframes zoom-past {
+  0% {
+    transform: translateX(100%);
+    /* Start off-screen to the right */
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Stop centered on screen */
+  }
+}
+
+.description-text {
+  margin-top: 50px;
+  font-size: 3vmin;
+  color: #ffeded;
+  text-align: center;
+
+  line-height: 1.5;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  ;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Next button styling */
+/* Next button styling */
+.next-button {
+  margin-top: 20px;
+  margin-left: 50px;
+  /* Adjust this value to move the button to the right */
+  background: none;
+  border: none;
+  color: #9dff00;
+  font-size: 4vmin;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.next-button:hover {
+  transform: translateY(-5px);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(30, 26, 32, 0.8);
+  /* Semi-transparent background */
+  border-bottom: 4px solid rgba(37, 88, 190, 0.8);
+  /* Semi-transparent Villanova Blue border */
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* Adds subtle shadow */
+  backdrop-filter: blur(10px);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 30px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #2596be;
+}
+
+
+/* Button Styling */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #3e74d2, #71fffa);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(39, 136, 73, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
