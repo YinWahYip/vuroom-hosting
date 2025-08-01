@@ -17,11 +17,6 @@
                 
             </li>
             
-<li>
-    <a href="#single-room-section">
-        <button class="button-62" role="button"><span class="text">Explore</span></button>
-    </a>
-</li>
 
             <li>
                 <a href="https://www1.villanova.edu/university.html" target="_blank" rel="noopener noreferrer">
@@ -85,5 +80,14 @@
     </section>
 
     <script type="module" src="./script.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const target = document.getElementById('single-room-section');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' }); // use 'auto' if you want no animation
+        }
+    });
+</script>
+
 </body>
 </html>
