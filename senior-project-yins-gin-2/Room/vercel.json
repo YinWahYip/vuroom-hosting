@@ -5,6 +5,10 @@
             "destination": "/index.html"
         },
         {
+            "buildCommand": "npx vite build",
+            "outputDirectory": "dist"
+        },
+        {
             "source": "/information",
             "destination": "/information/information.html"
         },
