@@ -1,24 +1,19 @@
 {
-    "rewrites": [
-        {
-            "source": "/",
-            "destination": "/index.html"
-        },
-        {
-            "buildCommand": "npx vite build",
-            "outputDirectory": "dist"
-        },
-        {
-            "source": "/information",
-            "destination": "/information/information.html"
-        },
-        {
-            "source": "/single-room",
-            "destination": "/js/rooms/single-room.html"
-        },
-        {
-            "source": "/double-room",
-            "destination": "/js/rooms/double-room.html"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "Room/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "Room/dist",
+        "workingDirectory": "Room"
+      }
+    }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/information", "destination": "/information/information.html" },
+    { "source": "/single-room", "destination": "/js/rooms/single-room.html" },
+    { "source": "/double-room", "destination": "/js/rooms/double-room.html" }
+  ]
 }
