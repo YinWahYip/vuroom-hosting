@@ -1,5 +1,5 @@
 {
-  "name": "threejs-journey-exercise",
+  "name": "vuroom",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "deploy": "vercel --prod"
-
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.9.0",
@@ -18,7 +17,6 @@
     "esbuild": "^0.24.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "vite": "^5.3.3",
     "vite-plugin-restart": "^0.4.1"
   },
   "dependencies": {
@@ -26,6 +24,7 @@
     "gsap": "3.12",
     "lil-gui": "^0.19.2",
     "three": "^0.166.1",
-    "vercel": "^39.2.1"
+    "vercel": "^39.2.1",
+    "vite": "^5.4.19"
   }
 }
