@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VUROOM</title>
-  <script type="module" crossorigin src="/assets/index-DV3exf39.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-rLhWNwHf.css">
+  <script type="module" crossorigin src="/assets/index-BnCG02ss.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CHJtXWIj.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -18,11 +18,12 @@
                 
             </li>
             
-            <li>
-                <!-- <a href="#explore">
-                    <button class="button-62" role="button"><span class="text">Explore</span></button>
-                </a> -->
-            </li>
+<li>
+    <a href="#single-room-section">
+        <button class="button-62" role="button"><span class="text">Explore</span></button>
+    </a>
+</li>
+
             <li>
                 <a href="https://www1.villanova.edu/university.html" target="_blank" rel="noopener noreferrer">
                     <button class="button-62" role="button"><span class="text">Villanova University</span></button>
@@ -60,7 +61,7 @@
         </div>
     </section>
     
-    <section class="section">
+<section class="section" id="single-room-section">
         <h2>READY TO BE IN A SINGLE?</h2>
         <!-- Button navigates to single-room.html -->
         <a href="./js/rooms/single-room.html">
@@ -83,6 +84,17 @@
     <section class="section">
         <!-- <h2>Congrats!</h2> -->
     </section>
+
+    
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const target = document.getElementById('single-room-section');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
+
 
 </body>
 </html>

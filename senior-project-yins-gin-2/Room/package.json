@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "deploy": "vercel --prod"
   },
   "devDependencies": {
@@ -17,6 +17,7 @@
     "esbuild": "^0.24.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
+    "vite": "^7.0.6",
     "vite-plugin-restart": "^0.4.1"
   },
   "dependencies": {
@@ -24,7 +25,6 @@
     "gsap": "3.12",
     "lil-gui": "^0.19.2",
     "three": "^0.166.1",
-    "vercel": "^39.2.1",
-    "vite": "^5.4.19"
+    "vercel": "^39.2.1"
   }
 }

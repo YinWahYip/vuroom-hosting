@@ -4,3 +4,13 @@ node_modules
 amplify_outputs*
 amplifyconfiguration*
 .vercel
+
+
+# Amplify
+.amplify/
+amplify_outputs.json
+amplifyconfiguration.json
+amplify/
+
+# Vercel
+.vercel/
